@@ -17,7 +17,7 @@ public class BookInventoryServiceImpl implements BookInventoryService {
 	public BookInventoryServiceImpl() {
 	}
 
-	public BookData getBook(String isbn) {
+	public BookData getBookbyISNB(String isbn) {
 
 		BookData book = this.bookInventoryRepo.findByIsbn(isbn);
 
